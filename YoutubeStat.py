@@ -124,11 +124,11 @@ def main():
         parser.print_help()
         return 1
 
-    # URL = "https://www.kedoo.com/youtube/en/top-channels.html?period=2017-11-01&category=2&lang=en"
-    URL = "https://www.baidu.com/s?wd=news&rsv_spt=1&rsv_iqid=0xfd03b200002f9eff&issp=1&f=8&rsv_bp=1&rsv_idx=2&ie=utf-8&tn=baiduhome_pg&rsv_enter=1&rsv_dl=ib"
+    URL = "https://www.kedoo.com/youtube/en/top-channels.html?period=2017-11-01&category=2&lang=en"
+    # URL = "https://www.baidu.com/s?wd=news&rsv_spt=1&rsv_iqid=0xfd03b200002f9eff&issp=1&f=8&rsv_bp=1&rsv_idx=2&ie=utf-8&tn=baiduhome_pg&rsv_enter=1&rsv_dl=ib"
     html = get_HTML(URL)
     res = get_data(html)
-    print("res === ", res)
+    # print("res === ", res)
     output(res, topN=int(options.__dict__["topN"]), fmt=options.__dict__["fmt"])
 
     return 0
