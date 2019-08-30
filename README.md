@@ -4,5 +4,7 @@
 其它依赖项，直接pip install -r requirements.txt即可。
 
 运行：
-cd 至根目录，运行命令行：python YoutubeStat.py --category news --topN 20 --lang en --fmt csv
+获取《流浪地球》豆瓣短评，cd 至根目录，运行命令行：python Reptile_douban.py
+
+获取《self_driver》Youtube评论，cd至根目录，运行命令行：Reptile_youtube.py（有错误，待测试和修改）
 
